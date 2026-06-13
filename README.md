@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# ⚡ MeetMind AI — Turn Meetings into Action, Instantly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Microsoft Build AI Hackathon 2026 | Theme: AI at Work: Productivity & Teamwork Reimagined
 
-## Available Scripts
+## 🔗 Live Demo
 
-In the project directory, you can run:
+**[https://meetmind-ai-cexa.onrender.com/](https://meetmind-ai-cexa.onrender.com/)**
 
-### `npm start`
+## 📌 Problem Statement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Professionals waste hours every week manually writing meeting summaries, tracking action items, and drafting follow-up emails. Distributed teams lose context, miss deadlines, and spend cognitive energy on tasks that AI can handle instantly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💡 Solution
 
-### `npm test`
+MeetMind AI is an intelligent meeting assistant that transforms raw meeting transcripts into structured, actionable insights in seconds — powered by GitHub Models (GPT-4o) via the Microsoft AI ecosystem.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+-   📝 **Smart Summary** — Concise 3-5 sentence meeting recap
+-   ✅ **Action Items** — Auto-extracted tasks with owner names
+-   📧 **Follow-up Email Draft** — Professional email ready to send
+-   😊 **Sentiment Analysis** — Overall mood + per-speaker breakdown
+-   📊 **Meeting Stats** — Speaker count, duration, meeting type
+-   📅 **Calendar Event Generator** — Auto-generates `.ics` file to add follow-up directly to calendar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   **Frontend:** React.js
+-   **AI Model:** GPT-4o via GitHub Models (Microsoft AI Stack)
+-   **Deployment:** Render
+-   **Tools Used:** GitHub Copilot (assisted development)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ Architecture
 
-### `npm run eject`
+User Transcript Input
+↓
+React Frontend
+↓
+GitHub Models API (GPT-4o)
+↓
+Structured JSON Response
+↓
+Summary | Actions | Email | Sentiment | Stats | Calendar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Setup Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   Node.js v16+
+-   GitHub Personal Access Token
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+```bash
+git clone https://github.com/Poonam1216/meetmind-ai.git
+cd meetmind-ai
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Environment Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env` file in root:
+REACT_APP_GITHUB_TOKEN=your_github_token_here
 
-### Code Splitting
+### Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+Open [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📊 Evaluation Criteria Mapping
 
-### Making a Progressive Web App
+| Criteria                                | How MeetMind AI Addresses It                                      |
+| --------------------------------------- | ----------------------------------------------------------------- |
+| AI Integration & Intelligence (25%)     | GPT-4o via GitHub Models for 6 distinct AI outputs                |
+| System Architecture & Engineering (25%) | Clean React architecture, structured JSON parsing, error handling |
+| Communication & UX (15%)                | Dark theme UI, tabbed navigation, copy/download features          |
+| Prototype Readiness (15%)               | Fully deployed, accessible live URL                               |
+| Problem Depth (10%)                     | Solves real productivity pain point for distributed teams         |
+| Market Understanding (10%)              | Targets 300M+ Microsoft Teams users globally                      |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👥 Team
 
-### Advanced Configuration
+| Name        | Role                                  |
+| ----------- | ------------------------------------- |
+| Poonam Rani | Full Stack Developer & AI Integration |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤖 AI Tools Used
 
-### Deployment
+-   GitHub Copilot — assisted with code development
+-   GPT-4o (GitHub Models) — core AI engine for transcript analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License — see LICENSE file
